@@ -1,9 +1,19 @@
-# Brand Growth Director — Agent لإنقاذ البيزنس اللي مبيعاته ضعيفة
+# Brand Growth Director: Agent للـ Agency ينقذ ويكبّر أي بيزنس
 
-Agent بيشتغل بعقلية **Creative Director بخبرة results-driven**، مبني على بحث عن:
-Meta Andromeda، و Long-Term Creative Strategy، و Customer Intelligence، و Community & LTV.
+Agent بيشتغل بعقلية **Creative Director بخبرة results-driven** جوه agency. بينفع مع **أي نوع بيزنس**:
 
-> **المعادلة:** Community Building + Customer Intelligence + Creative Direction ← والـ Media Buying هو طريقة التنفيذ.
+| النوع | أمثلة |
+|---|---|
+| منتجات / E-commerce | هدوم، كوزمتكس، أكل، home |
+| خدمات بمواعيد | عيادة أسنان، مركز صيانة عربيات، صالون، علاج طبيعي |
+| أماكن وتجارب | board game café، مطعم، جيم، escape room |
+| قرار شراء كبير | عقارات، كورسات، أفراح، تشطيبات |
+| اشتراكات | عضويات، meal plans، SaaS |
+| B2B | خدمات للشركات، توريدات |
+
+> **المعادلة:** Community Building + Customer Intelligence + Creative Direction، والـ Media Buying هو طريقة التنفيذ.
+> **أهم مبدأ:** لكل بيزنس "لحظة فلوس" (Money Moment)، وكل حاجة بتتقاس وبتتحسّن عليها هي، مش على الكليكات أو الرسايل.
+> في المتجر هي الأوردر اللي اتسلم، في العيادة المريض اللي حضر ودفع، وفي الكافيه الزيارة.
 
 ---
 
@@ -12,52 +22,59 @@ Meta Andromeda، و Long-Term Creative Strategy، و Customer Intelligence، و 
 ```
 brand-growth-agent/
 ├── research/
-│   └── 01-research-report.md      ← البحث: إيه المدعوم بأدلة، وإيه المبالغ فيه، والمصادر
+│   ├── 01-research-report.md              ← Andromeda، Creative Strategy، Community، LTV
+│   └── 02-services-and-local-addendum.md  ← الخدمات والبيزنس المحلي والـ lead-gen
 ├── agent/
-│   ├── system-prompt.md           ← "دماغ" الـ Agent (portable)
+│   ├── system-prompt.md                   ← تعليمات الـ Agent الأساسية
 │   ├── knowledge/
-│   │   ├── frameworks.md          ← Andromeda, Binet&Field, Sharp, JTBD, RFM, Measurement
-│   │   └── playbooks.md           ← Triage, Intelligence Sprint, Concept Build, Account, VIP...
+│   │   ├── business-models.md             ← 6 أنواع بيزنس: لحظة الفلوس، الأرقام، الإعداد، الـ compliance
+│   │   ├── frameworks.md                  ← Andromeda, Binet&Field, Sharp, JTBD, RFM
+│   │   └── playbooks.md                   ← تشخيص منتج/خدمة، أماكن، Onboarding لعميل agency
 │   └── templates/
-│       └── templates.md           ← Intake, Scorecard, Interview Script, Concept, Angles, 90-day
-└── clients/                       ← الـ Agent بيحط فيه شغل كل عميل
-.claude/agents/brand-growth-director.md  ← نسخة Claude Code subagent
+│       └── templates.md                   ← Intake، Scorecard، Interview، Concept، Angles، 90-day، تقرير شهري
+└── clients/                               ← فولدر لكل عميل + _learnings.md
+.claude/agents/brand-growth-director.md    ← نسخة Claude Code subagent
 ```
 
-## طريقة 1: Claude Code (جوه الريبو ده)
-الـ subagent متعرّف في `.claude/agents/brand-growth-director.md`. اكتب مثلاً:
-```
-استخدم brand-growth-director: عندي براند هدوم ستات، 400 أوردر في الشهر، الـ RTO 32%، و CPA عالي. اعملي diagnosis وخطة 90 يوم.
-```
-لو عندك exports (DMs، reviews، orders CSV) حطها في `brand-growth-agent/clients/<اسم-البراند>/` وقوله يحللها.
+## طرق الاستخدام
 
-## طريقة 2: Claude Project (claude.ai) أو Custom GPT
+**1. Claude Code (جوه الريبو ده)**
+```
+استخدم brand-growth-director: عميل جديد، عيادة أسنان في مدينة نصر، بيجيلهم 300 lead في الشهر بس الحجوزات قليلة.
+```
+```
+استخدم brand-growth-director: إيه الـ status والخطوة الجاية لعميل board-game-cafe؟
+```
+
+**2. Claude Project (claude.ai) أو Custom GPT**
 1. اعمل Project جديد.
-2. انسخ محتوى `agent/system-prompt.md` في الـ **Custom Instructions**.
-3. ارفع `knowledge/frameworks.md` و `knowledge/playbooks.md` و `templates/templates.md` و `research/01-research-report.md` كـ **Project Knowledge**.
-4. ابدأ بـ: "عايز أعمل diagnosis لبيزنس…" — هيسألك أسئلة الـ Intake.
+2. انسخ `agent/system-prompt.md` في الـ Custom Instructions.
+3. ارفع ملفات `knowledge/` و`templates/` و`research/`.
+4. ابدأ بـ "عميل جديد: …".
 
-## طريقة 3: API / Agent SDK
-استخدم `system-prompt.md` كـ system prompt وحمّل ملفات الـ knowledge كـ context. ممكن تزود tools زي قراءة CSV من Shopify/EasyOrders، أو قراءة Meta Ads Insights، أو تصدير محادثات WhatsApp.
+**3. API / Agent SDK:** استخدم `system-prompt.md` كـ system prompt، والملفات التانية كـ context.
 
 ---
 
-## الـ Agent بيعمل إيه؟ (D-U-C-S-R-M)
+## الـ Agent بيمشي إزاي مع أي عميل
 
-| المرحلة | السؤال | الناتج |
+| الخطوة | السؤال | الناتج |
 |---|---|---|
-| **Diagnose** | المشكلة في الماركتنج فعلاً؟ ولا في المنتج/السعر/الـ RTO/الـ margin؟ | Scorecard + أكبر bottleneck |
-| **Understand** | مين العملاء دول بجد؟ بيقولوا إيه؟ إيه اللي بيحركهم؟ | Segments + Language Bank + Category Entry Points |
-| **Concept** | إيه الفكرة اللي تعيش 90 يوم وتطلع منها كل الإعلانات؟ | Brand Platform + Core Concept + Angle Matrix |
-| **Signal** | إزاي نأكّل الـ algorithm صح؟ | Account structure + CAPI + Value-based seeds + Confirmed-order events |
-| **Relationship** | إزاي نحوّل المشتري لعضو؟ | VIP / WhatsApp Community / Early Access / Post-purchase flow |
-| **Measure** | إحنا بنكسب فلوس بجد؟ | Margin, MER, CAC, AOV, LTV, RTO dashboard |
+| **0. Classify** | نوع البيزنس إيه؟ لحظة الفلوس إيه؟ | تصنيف + KPI متفق عليه |
+| **1. Diagnose** | المشكلة في الماركتنج فعلاً؟ ولا في الرد على العملاء، أو الحضور، أو السعر، أو الخدمة؟ | Scorecard + أكبر عائق |
+| **2. Understand** | العملاء بيقولوا إيه؟ إيه اللي بيحركهم؟ | Segments + Language Bank + لحظات الاحتياج |
+| **3. Concept** | إيه الفكرة اللي تعيش 90 يوم؟ | Brand Platform + Concept + Angles |
+| **4. Signal** | إزاي نعلّم الـ algorithm يجيب عملاء بيدفعوا بجد؟ | CAPI، ربط الـ CRM، Click-to-WhatsApp |
+| **5. Relationship** | إزاي العميل يرجع ويجيب غيره؟ | VIP / Regulars / Recall / Referral |
+| **6. Measure** | بنكسب فلوس بجد؟ | Dashboard أسبوعي + تقرير شهري |
 
-## أهم 5 حاجات طلعت من البحث
-1. **مش المشكلة في عدد الإعلانات، المشكلة في التشابه.** Meta بتجمع الإعلانات اللي شبه بعض وتعاملها كإعلان واحد. المطلوب Concepts مختلفة فعلاً (شخص مختلف، موقف مختلف، رغبة مختلفة، format مختلف) تحت فكرة واحدة كبيرة.
-2. **Creative = Targeting.** Meta نفسها قالت إن الـ creative diversification بقى أهم أداة توصل بيها للجمهور.
-3. **الكتب القديمة رجعت:** Binet & Field (≈60/40 brand/activation) و Byron Sharp (Category Entry Points + Distinctive Assets) هما بالظبط اللي الـ algorithm بيكافئه.
-4. **في مصر: الـ Purchase مش revenue.** مع COD والـ RTO ~25–35%، لازم تقيس وتبعت events على الأوردرات المؤكدة/المستلمة.
-5. **Founder story مهمة بس مش شرط بقاء.** المهم يكون فيه إنسان أو قصة حقيقية الناس تتعلق بيها، وفيه بدائل (Origin, Expert, Community faces, Craft).
+## أهم اللي طلع من البحث
+1. **التشابه هو المشكلة مش العدد.** Meta بتجمع الإعلانات اللي شبه بعض وتعاملها كإعلان واحد، فالمطلوب Concepts مختلفة فعلاً تحت فكرة واحدة.
+2. **الإعلان نفسه بقى هو الـ Targeting**، وده كلام Meta نفسها.
+3. **في الخدمات، الفلوس بتضيع بعد الـ lead:** رد متأخر، ناس مابتحضرش، أو مفيش متابعة. ده بيتصلح قبل ما تزوّد الميزانية.
+4. **Meta تقدر تتعلم من الـ CRM.** لما تبعتلها مين حجز ومين حضر، بتجيبلك ناس شبههم.
+5. **للبيزنس المحلي، الـ Reviews جزء من البيع.** حوالي نص الناس مش بيتعاملوا مع مكان عنده أقل من 20 review (رقم vendor أمريكي، نتعامل معاه كاتجاه).
+6. **في المنتجات بمصر، الـ Purchase مش revenue.** مع الدفع عند الاستلام، الـ algorithm لازم يتعلم من الأوردرات المؤكدة.
+7. **مش لازم الوش يكون الـ Founder.** ممكن يكون الدكتور، أو الميكانيكي، أو الـ host، أو العملاء نفسهم. المهم إن القصة تكون حقيقية.
 
-التفاصيل والمصادر: [`research/01-research-report.md`](research/01-research-report.md)
+التفاصيل والمصادر في [`research/`](research/).

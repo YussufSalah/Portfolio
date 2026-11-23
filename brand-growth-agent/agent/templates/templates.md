@@ -1,19 +1,43 @@
 # Templates
 
-## T1. Intake Brief
+## T1. Intake Brief (any business)
 ```
-Brand / Category:
-Products & price points:
-COGS + shipping per order:
-Monthly orders (placed / delivered):
-AOV:
-Repeat rate (90d):
-Monthly ad spend & channels:
-CPA (placed / delivered):
-Tracking: Pixel? CAPI? Optimization event?
+— Basics —
+Client / Brand:
+Category:
+Archetype(s): A Product · B Appointment service · C Venue/Experience · D High-ticket · E Subscription · F B2B
+Locations / service area:
+Products or services + price/ticket range:
+Most profitable product/service:
+Money moment (agreed): e.g., delivered order / patient showed & paid / visit / signed contract / renewal
+
+— Numbers (last 3 months) —
+Revenue / month:
+Customers or orders / month:
+AOV or average ticket:
+Cost to deliver (COGS, shipping, materials, staff time) → margin:
+Repeat / return / retention rate:
+Ad spend / month & channels:
+Cost per money moment (if known):
+
+— Funnel (fill what applies) —
+Product: placed → confirmed → delivered (RTO %):
+Service: leads → reply time → booked → showed → paid (acceptance %):
+Venue: bookings/walk-ins per week, busiest & deadest slots:
+High-ticket/B2B: leads → qualified → meeting → won, cycle length:
+Subscription: trial → paid, month-2/3/6 retention:
+
+— Brand & creative —
+Brand face / story (founder, expert, host…):
 Live creatives: # total / # truly different concepts:
-Brand face / story:
-Community channels (WhatsApp, IG, etc.):
+Google rating & # reviews vs. top competitors:
+
+— Data & ops —
+Tracking: Pixel? CAPI? CRM/booking/POS? Event optimized:
+Who answers messages/calls, and how fast:
+Community channels (WhatsApp, IG, groups):
+
+— Context —
 Top 3 customer complaints / objections:
 Competitors:
 Cash runway (weeks):
@@ -36,6 +60,7 @@ Goal for next 90 days:
 **#1 bottleneck:** …  **Why:** …
 
 ## T3. Switch Interview Script (Egyptian Arabic)
+> غيّر كلمة [المنتج] حسب البيزنس: الخدمة، الدكتور، المركز، المكان، الكورس…
 1. احكيلي عن نفسك شوية وعن يومك العادي.
 2. افتكر أول مرة فكرت إنك محتاج/ة حاجة زي [المنتج]… كان إيه اللي حصل؟
 3. كنت بتستخدم/ي إيه قبل كده؟ إيه اللي كان مضايقك فيه؟ (Push)
@@ -106,13 +131,43 @@ Audience signal on Meta (customer list / engagement / value seed):
 ## T8. Weekly Dashboard
 | Metric | Target | This week | Last week | Note |
 |---|---|---|---|---|
-| Revenue (delivered) |  |  |  |  |
+| Revenue (on money moment) |  |  |  |  |
 | Contribution margin |  |  |  |  |
 | MER |  |  |  |  |
-| CAC (delivered) |  |  |  |  |
-| AOV |  |  |  |  |
-| RTO % |  |  |  |  |
-| Repeat rate (cohort) |  |  |  |  |
+| Cost per money moment |  |  |  |  |
+| AOV / average ticket |  |  |  |  |
+| Ops leak metric (RTO % / show rate / reply time / utilization / churn) |  |  |  |  |
+| Repeat / return rate (cohort) |  |  |  |  |
+| Reviews: new this week / rating |  |  |  |  |
 | # distinct concepts live |  |  |  |  |
 | Top concept hook / hold / CTR / CVR |  |  |  |  |
-| VIP community size / engagement |  |  |  |  |
+| Community size / engagement (VIP, regulars, members) |  |  |  |  |
+
+## T9. Monthly Client Report
+```
+Client:            Month:
+Money moment this month: __ (vs. last: __, vs. target: __)
+Cost per money moment: __   MER: __   Margin: __
+
+1. What happened (3 bullets, numbers first)
+2. What we learned about customers (new phrases, objections, segments)
+3. Concepts & angles: what won, what lost, why
+4. Community / retention: actions + results
+5. Ops leaks found (response time, show rate, RTO, utilization…) + client action needed
+6. Next month: angles to launch, tests, community actions
+7. Decisions needed from the client
+```
+
+## T10. Client Folder Structure
+```
+clients/<client-slug>/
+├── brief.md             (T1)
+├── diagnosis.md         (T2)
+├── customer-intel.md    (segments T6, language bank, CEPs, interview notes)
+├── concept-platform.md  (T4)
+├── angles.md            (T5)
+├── plan-90d.md          (T7)
+├── inputs/              (exports: DMs, reviews, orders, CRM — never commit personal data to a public repo)
+└── reports/YYYY-MM.md   (T9)
+clients/_learnings.md    (anonymized patterns by archetype)
+```
