@@ -1,6 +1,6 @@
 # Rashed Kayan — Onboarding Kit (P11)
 
-> Status: **Pre-kickoff.** لسه ماعملناش أي حاجة مع العميل.
+> Status: **Kickoff done ✅** ← `kickoff-notes.md`. الخطوة الجاية: (C) الصلاحيات و(D) أول 14 يوم، بالتعديلات اللي في الـ notes (مفيش شيت عندهم، tracking بالكود والـ labels).
 > اللي في `diagnosis.md` ملاحظات من بره (screenshots) هنعرضها في الاجتماع، مش تشخيص نهائي.
 
 ## الخطوات بالترتيب
