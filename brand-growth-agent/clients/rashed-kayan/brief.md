@@ -1,6 +1,6 @@
 # Rashed Kayan — Client Brief (T1)
 
-> Status: **Onboarding — Day 0**. اللي مكتوب `?` لسه محتاج نعرفه من العميل.
+> Status: **Onboarding — Day 1 (audit من screenshots IG / FB / Google Maps، 24 نوفمبر 2026)**. اللي مكتوب `?` لسه محتاج نعرفه من العميل.
 
 ## Step 0 — Classification
 - **Category:** Automotive service center (صيانة عربيات)
@@ -14,11 +14,11 @@
 ## Basics
 | Item | Value |
 |---|---|
-| مين رشيد؟ صاحب المكان؟ فني؟ اسم عيلة؟ | ? |
-| سنين الخبرة / سنة الافتتاح | ? |
-| الخدمات (غيار زيت، فرامل، عفشة، كهربا، تكييف، فحص كمبيوتر، سمكرة ودوكو، عَمرة…) | ? |
+| مين رشيد؟ | **صاحب المكان** (من العميل) |
+| سنين الخبرة | "over three decades" (FB bio) |
+| الخدمات | **كل حاجة ليها علاقة بالعربيات** (من العميل). التفاصيل والأسعار لسه |
 | أكتر خدمة بتكسب (margin) | ? |
-| الماركات اللي متخصص فيها (لو فيه) | ? |
+| الماركات | **متخصص ألماني:** VW, Audi, Skoda, SEAT, CUPRA, Mercedes (IG/FB). على اليافطة كمان لوجو Porsche |
 | عدد الـ bays / الفنيين / ساعات الشغل | ? |
 | متوسط الفاتورة | ? |
 | عربيات في الشهر | ? |
@@ -28,7 +28,7 @@
 |---|---|
 | الإيراد في الشهر | ? |
 | العملاء الجداد مقابل اللي راجعين | ? |
-| الصرف على الإعلانات والقنوات | ? |
+| الصرف على الإعلانات | **18,000 جنيه في الشهر** (من العميل) |
 | تكلفة العميل اللي دفع (لو معروفة) | ? |
 
 ## Funnel
@@ -39,15 +39,22 @@
 | استفسار ← حجز % | ? |
 | حجز ← حضور % | ? |
 | تشخيص ← موافقة على الشغل % | ? |
-| تقييم Google ورقم الـ reviews، مقارنة بأقرب 3 منافسين | ? |
+| Google | **4.1 ★ (36 review)**، والـ category غلط ("Chauffeur service")، والاسم "Rashed Auto". منافسين: ? |
 
 ## Brand & data
 | Item | Value |
 |---|---|
 | لوجو، ألوان، يونيفورم، شكل المكان | ? |
 | الإعلانات الحالية: العدد الكلي / كام فكرة مختلفة فعلاً | ? |
-| Pixel / CAPI / فيه CRM أو حتى شيت للعملاء؟ | ? |
-| WhatsApp Business؟ | ? |
+| CRM / شيت | **مفيش حالياً، هنعمل شيت** → `rashed-kayan-tracker.xlsx` |
+| WhatsApp | زرار WhatsApp على صفحة FB. Business app؟ ? |
 | فيه بيانات عملاء قدام (أرقام + نوع العربية + آخر زيارة)؟ | ? |
-| ميزانية الإعلانات المتاحة | ? |
+| ميزانية الإعلانات المتاحة | 18,000 جنيه في الشهر |
 | هدف الـ 90 يوم من وجهة نظر العميل | ? |
+
+## Channels (من الـ screenshots)
+| Channel | Name shown | Numbers | Notes |
+|---|---|---|---|
+| Instagram @rashedkayann | Rashed Kayan Auto Service | 213 posts · 1,026 followers | Bio: "Premium care for German vehicles with original parts and expert engineers." |
+| Facebook | Rashed Kayan Auto Service | 6.2K followers · 100% recommend (7 reviews) | Bio: "With over three decades of experience, we are the best." العنوان: شارع الجزائر، خلف الإدارة التعليمية، 11724. إيميل gmail |
+| Google Maps | **Rashed Auto** | 4.1 ★ (36) · category "Chauffeur service" | صور: يافطة "Rashed Group" و"RASHED SERVICE"، وصالة انتظار. بيفتح 9 الصبح |
