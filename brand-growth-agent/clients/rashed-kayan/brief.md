@@ -1,6 +1,6 @@
 # Rashed Kayan — Client Brief (T1)
 
-> Status: **Onboarding — Day 1 (audit من screenshots IG / FB / Google Maps، 24 نوفمبر 2026)**. اللي مكتوب `?` لسه محتاج نعرفه من العميل.
+> Status: **Pre-kickoff.** لسه ماعملناش أي حاجة مع العميل. الخطوات في `onboarding.md`. البيانات اللي تحت من screenshots IG / FB / Google Maps (24 نوفمبر 2026) ومن الـ agency. اللي مكتوب `?` لسه محتاج نعرفه من العميل.
 
 ## Step 0 — Classification
 - **Category:** Automotive service center (صيانة عربيات)

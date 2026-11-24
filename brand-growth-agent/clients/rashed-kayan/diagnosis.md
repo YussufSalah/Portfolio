@@ -1,6 +1,7 @@
 # Rashed Kayan — Diagnosis (T2)
 
-> **Audit Day 1 (24 نوفمبر 2026):** من screenshots الـ Instagram وFacebook وGoogle Maps، ومعلومات العميل (رشيد صاحب المكان، كل خدمات العربيات، ميزانية 18,000 جنيه في الشهر، مفيش شيت لسه).
+> **Pre-kickoff observations (24 نوفمبر 2026)، مش تشخيص نهائي.** التشخيص النهائي يوم 5–7 بعد الـ Kickoff (`onboarding.md`).
+> المصدر: من screenshots الـ Instagram وFacebook وGoogle Maps، ومعلومات العميل (رشيد صاحب المكان، كل خدمات العربيات، ميزانية 18,000 جنيه في الشهر، مفيش شيت لسه).
 > لسه ناقص: أرقام المبيعات، والرد على الواتساب (mystery shop)، ونصوص الـ reviews، والـ Ads Library.
 
 ## اللي البراند عنده (نقط القوة)
